@@ -1,1 +1,1 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic-angular/official/tabs) repo! :point_left:
+### :point_right: YHacks 2017 Submission - Reece Griffith, Evonne Zhu, Jay Agaskar, Shaun Khunder
