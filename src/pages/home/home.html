@@ -16,62 +16,49 @@
     </ion-list-header>
     <ion-item>
       <ion-avatar item-start>
-        <img src="../../assets/images/avatar.png">
+        <img src="../../assets/gump.jpg">
       </ion-avatar>
       <h2>Mike McTravler</h2>
       <p>Travel the world!</p>
     </ion-item>
-     <ion-item>
-        <button ion-button full><ion-icon name="create"></ion-icon>&nbsp;Edit</button>         
-    </ion-item>  
+    <ion-item>
+      Travel Savings: Current/Goal
+      <ion-badge item-end style="background-color:green">$2k/2.5k</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="happy" item-start></ion-icon>
+      Rewards Points
+      <ion-badge item-end style="background-color:dodgerblue">541k</ion-badge>
+  </ion-item>
+
+  <ion-item>
+      <ion-icon name="checkbox" item-start></ion-icon>
+      Trips Taken/Planned:
+      <ion-badge item-end>7/9</ion-badge>
+  </ion-item>
+
   </ion-list>
 
   <ion-list>
 
     <ion-list-header>
-        Your Conservations
+        Your Bucket List
     </ion-list-header>
-
-      <ion-item>
-          Joined:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;September, 2017
-      </ion-item>
-
-      <ion-item>
-          <ion-icon name="people" item-start></ion-icon>
-          Friends
-          <ion-badge item-end>18</ion-badge>
-      </ion-item>
-
-      <ion-item>
-          <ion-icon name="happy" item-start></ion-icon>
-          Travel Points
-          <ion-badge item-end style="background-color:dodgerblue">541k</ion-badge>
-      </ion-item>
-
-      <ion-item>
-          <ion-icon name="checkbox" item-start></ion-icon>
-          Trips Taken/Planned:
-          <ion-badge item-end>7/9</ion-badge>
-      </ion-item>
-
-  </ion-list>
-
-  <ion-list>
-    <ion-list-header>
-      Customize your experience
-    </ion-list-header>
-
+    
     <ion-item>
-      <ion-label>Push Notifications</ion-label>
-      <ion-toggle value="foo" checked="true"></ion-toggle>
+      <ion-icon name="plane" item-start></ion-icon>
+      Bangkok, Thailand
+      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>
     </ion-item>
 
     <ion-item>
-        <ion-label>Private Profile</ion-label>
-        <ion-toggle value="foo" checked="false"></ion-toggle>
+      <ion-icon name="plane" item-start></ion-icon>
+      Tokyo, Japan
+      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>
     </ion-item>
 
   </ion-list>
+
 
   <button ion-button full (click)="logout()"><ion-icon name="power"></ion-icon>&nbsp;Logout</button>
 
