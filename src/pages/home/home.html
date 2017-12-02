@@ -1,78 +1,78 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title style="text-align:right;">
-      Settings
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
+    <ion-navbar>
+      <ion-title style="text-align:right;">
+        Settings
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 <ion-content>
 
+ 
 
+  <ion-list>
+    <ion-list-header>
+      Your Profile
+    </ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/images/avatar.png">
+      </ion-avatar>
+      <h2>Mike McTravler</h2>
+      <p>Travel the world!</p>
+    </ion-item>
+     <ion-item>
+        <button ion-button full><ion-icon name="create"></ion-icon>&nbsp;Edit</button>         
+    </ion-item>  
+  </ion-list>
 
-<ion-list>
-  <ion-list-header>
-    Your Profile
-  </ion-list-header>
-  <ion-item>
-    <ion-avatar item-start>
-      <img src="../../assets/images/avatar.png">
-    </ion-avatar>
-    <h2>Leo Dicaprio</h2>
-    <p>Travel the world!</p>
-  </ion-item>
-   <ion-item>
-      <button ion-button full><ion-icon name="create"></ion-icon>&nbsp;Edit</button>         
-  </ion-item>  
-</ion-list>
+  <ion-list>
 
-<ion-list>
+    <ion-list-header>
+        Your Conservations
+    </ion-list-header>
 
-  <ion-list-header>
-      Your Conservations
-  </ion-list-header>
+      <ion-item>
+          Joined:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;September, 2017
+      </ion-item>
+
+      <ion-item>
+          <ion-icon name="people" item-start></ion-icon>
+          Friends
+          <ion-badge item-end>18</ion-badge>
+      </ion-item>
+
+      <ion-item>
+          <ion-icon name="happy" item-start></ion-icon>
+          Travel Points
+          <ion-badge item-end style="background-color:dodgerblue">541k</ion-badge>
+      </ion-item>
+
+      <ion-item>
+          <ion-icon name="checkbox" item-start></ion-icon>
+          Trips Taken/Planned:
+          <ion-badge item-end>7/9</ion-badge>
+      </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Customize your experience
+    </ion-list-header>
 
     <ion-item>
-        Joined:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;September, 2017
+      <ion-label>Push Notifications</ion-label>
+      <ion-toggle value="foo" checked="true"></ion-toggle>
     </ion-item>
 
     <ion-item>
-        <ion-icon name="people" item-start></ion-icon>
-        Experiences had
-        <ion-badge item-end>74</ion-badge>
+        <ion-label>Private Profile</ion-label>
+        <ion-toggle value="foo" checked="false"></ion-toggle>
     </ion-item>
 
-    <ion-item>
-        <ion-icon name="happy" item-start></ion-icon>
-        Travel Points
-        <ion-badge item-end style="background-color:dodgerblue">541k</ion-badge>
-    </ion-item>
+  </ion-list>
 
-    <ion-item>
-        <ion-icon name="checkbox" item-start></ion-icon>
-        Trips taken/planned
-        <ion-badge item-end>11/24<ion-badge>
-    </ion-item>
-
-</ion-list>
-
-<ion-list>
-  <ion-list-header>
-    Customize your experience
-  </ion-list-header>
-
-  <ion-item>
-    <ion-label>Push Notifications</ion-label>
-    <ion-toggle value="foo" checked="true"></ion-toggle>
-  </ion-item>
-
-  <ion-item>
-      <ion-label>Private Profile</ion-label>
-      <ion-toggle value="foo" checked="false"></ion-toggle>
-  </ion-item>
-
-</ion-list>
-
-<button ion-button full (click)="logout()"><ion-icon name="power"></ion-icon>&nbsp;Logout</button>
+  <button ion-button full (click)="logout()"><ion-icon name="power"></ion-icon>&nbsp;Logout</button>
 
 </ion-content>
