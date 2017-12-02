@@ -1,5 +1,17 @@
 page-explore {
 
+	.imagewrap {display:inline-block;position:relative;}
+	
+	.button1 {
+		position:absolute;
+		bottom:7.5%;
+		left:2.5%;
+		color:white;
+		border-radius: 20px;
+		background-color: dodgerblue;
+		font-size:0.75em;
+	}
+
 	.lcolumn {
 		width: 50%;
 		padding-right: 6px;
