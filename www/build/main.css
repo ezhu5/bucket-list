@@ -25678,6 +25678,27 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-explore .lcolumn {
+  width: 50%;
+  padding-right: 6px;
+}
+
+page-explore .rcolumn {
+  width: 50%;
+  padding-left: 6px;
+}
+
+page-explore .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+page-explore img {
+  border-radius: 12px;
+  padding-bottom: 8px;
+}
+
 page-login {
   /* Generated with Bounce.js. Edit at https://goo.gl/B1bNzi */
 }

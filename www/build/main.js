@@ -152,7 +152,7 @@ var ExplorePage = (function () {
     }
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
+            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<img src="../../assets/imgs/arizona.jpg">\n			<img src="../../assets/imgs/venus-pool-maui.jpg">\n			<img src="../../assets/imgs/britishcolumbia.jpg">\n			<img src="../../assets/imgs/haleakala.jpg">\n			<img src="../../assets/imgs/looking-glass-nc.jpg">\n			<img src="../../assets/imgs/cascademtn-wa.jpg">\n		</div>\n		<div class="rcolumn">\n			<img src="../../assets/imgs/netherlands.jpg">\n			<img src="../../assets/imgs/swiss-alps.jpg">\n			<img src="../../assets/imgs/switzerland.jpg">\n			<img src="../../assets/imgs/austria.jpg">\n			<img src="../../assets/imgs/yosemite.jpg">\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ExplorePage);
