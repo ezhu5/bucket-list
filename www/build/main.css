@@ -25695,8 +25695,19 @@ page-explore .row:after {
 }
 
 page-explore img {
-  border-radius: 12px;
-  padding-bottom: 8px;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+page-explore button {
+  width: 40px;
+  height: 60px;
+  position: relative;
+}
+
+page-explore ion-icon {
+  font-size: 35px;
 }
 
 page-login {
