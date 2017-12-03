@@ -25683,6 +25683,11 @@ page-explore .imagewrap {
   position: relative;
 }
 
+page-explore input {
+  border: none;
+  color: white;
+}
+
 page-explore .button1 {
   position: absolute;
   bottom: 14%;
