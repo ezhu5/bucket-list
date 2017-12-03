@@ -25686,11 +25686,20 @@ page-explore .imagewrap {
 page-explore .button1 {
   position: absolute;
   bottom: 14%;
-  left: 38%;
   color: white;
   background-color: transparent;
   border-radius: 30px;
   font-size: 0.75em;
+}
+
+page-explore .save {
+  background-color: red;
+  color: white;
+}
+
+page-explore .location {
+  width: 140%;
+  left: 42%;
 }
 
 page-explore .lcolumn {
@@ -25709,6 +25718,12 @@ page-explore .row:after {
   clear: both;
 }
 
+page-explore input[type=text] {
+  width: 90%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
 page-explore img {
   border-radius: 10px;
   padding-top: 4px;
@@ -25719,10 +25734,6 @@ page-explore button {
   width: 20px;
   height: 20px;
   position: relative;
-}
-
-page-explore ion-icon {
-  font-size: 40px;
 }
 
 page-login {

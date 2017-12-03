@@ -5,12 +5,20 @@ page-explore {
 	.button1 {
 		position:absolute;
 		bottom:14%;
-		left:38%;
 		color:white;
 		background-color:rgba(0,0,0,0);
 		border-radius:30px;
-
 		font-size:0.75em;
+	}
+
+	.save {
+		background-color:red;
+		color:white;
+	}
+
+	.location {
+		width: 140%;
+		left: 42%;
 	}
 
 	.lcolumn {
@@ -29,6 +37,12 @@ page-explore {
 		clear: both;
 	}
 
+	input[type=text] {
+	    width: 90%;
+	    -webkit-transition: width 0.4s ease-in-out;
+	    transition: width 0.4s ease-in-out;
+	}
+
 	img {
 		border-radius: 10px;
 		padding-top: 4px;
@@ -39,9 +53,5 @@ page-explore {
 		width: 20px;
 		height: 20px;
 		position: relative;
-	}
-
-	ion-icon {
-		font-size: 40px;
 	}
 }
