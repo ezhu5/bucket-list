@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 106:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -32,6 +32,7 @@ var LoginPage = (function () {
     function LoginPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.user = {};
         this.splash = true;
     }
     LoginPage.prototype.ionViewDidLoad = function () {
@@ -48,7 +49,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/login/login.html"*/`\n<div id="custom-overlay" [style.display]="splash ? \'flex\': \'none\'">\n    <div class="flb">\n      <div class="Aligner-item Aligner-item--top"></div>\n        <img src="../../assets/bl.png" style="align:center; width:75%">\n      <div class="Aligner-item Aligner-item--bottom"></div>\n    </div>\n  </div>\n\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Bucket List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n  <h2 style="color:white; text-align:center">Login</h2>\n\n  <img style="align:center; width:85%" src="../../assets/bl.png">\n  <br>\n  <br>\n  <ion-list>\n    \n      <ion-item>\n        <ion-label floating>Email</ion-label>\n        <ion-input [(ngModel)]="email" type="text" value=""></ion-input>\n      </ion-item>\n    \n      <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n      </ion-item>\n    \n    </ion-list>\n    \n    <button ion-button round full (click)="segueToMTabs()"><ion-icon name="log-in"></ion-icon>&nbsp;Login</button>\n    <button ion-button round full (click)="segueToReg()"><ion-icon name="person-add"></ion-icon>&nbsp;New User</button>  \n  \n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/login/login.html"*/`\n<div id="custom-overlay" [style.display]="splash ? \'flex\': \'none\'">\n    <div class="flb">\n      <div class="Aligner-item Aligner-item--top"></div>\n        <img src="../../assets/bl.png" style="align:center; width:75%">\n      <div class="Aligner-item Aligner-item--bottom"></div>\n    </div>\n  </div>\n\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Bucket List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n  <h2 style="color:white; text-align:center">Login</h2>\n\n  <img style="align:center; width:85%" src="../../assets/bl.png">\n  <br>\n  <br>\n  <ion-list>\n    \n      <ion-item>\n        <ion-label floating>Email</ion-label>\n        <ion-input [(ngModel)]="user.email" type="text" value=""></ion-input>\n      </ion-item>\n    \n      <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input [(ngModel)]="user.password"  type="password" value=""></ion-input>\n      </ion-item>\n    \n    </ion-list>\n    \n    <button ion-button round full (click)="segueToMTabs()"><ion-icon name="log-in"></ion-icon>&nbsp;Login</button>\n    <button ion-button round full (click)="segueToReg()"><ion-icon name="person-add"></ion-icon>&nbsp;New User</button>  \n  \n</ion-content>`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], LoginPage);
@@ -59,15 +60,15 @@ var LoginPage = (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_charts__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_charts__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(339);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -88,7 +89,7 @@ var TabsPage = (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Explore" tabIcon="globe"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Analytics" tabIcon="analytics"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profile" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Explore" tabIcon="globe"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Analytics" tabIcon="analytics"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profile" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -99,7 +100,7 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 118:
+/***/ 121:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -112,11 +113,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 118;
+webpackEmptyAsyncContext.id = 121;
 
 /***/ }),
 
-/***/ 159:
+/***/ 163:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -129,18 +130,18 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 159;
+webpackEmptyAsyncContext.id = 163;
 
 /***/ }),
 
-/***/ 203:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChartsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(458);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_chart_js__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -271,7 +272,7 @@ var ChartsPage = (function () {
     ], ChartsPage.prototype, "lineCanvas", void 0);
     ChartsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-charts',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/`\n<ion-header>\n    \n      <ion-navbar style="text-align:center;">\n        <ion-title>Charts</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      \n         <h2>Average Trip Price: Spain</h2> \n       \n          <canvas #barCanvas></canvas>\n    \n        <h2>Flight Popularity</h2>\n          <canvas #doughnutCanvas></canvas>\n      \n    <h2>Points Earned</h2>\n    \n          <canvas #lineCanvas></canvas>\n    \n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/
+            selector: 'page-charts',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/charts/charts.html"*/`\n<ion-header>\n    \n      <ion-navbar style="text-align:center;">\n        <ion-title>Charts</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      \n         <h2>Average Trip Price: Spain</h2> \n       \n          <canvas #barCanvas></canvas>\n    \n        <h2>Flight Popularity</h2>\n          <canvas #doughnutCanvas></canvas>\n      \n    <h2>Points Earned</h2>\n    \n          <canvas #lineCanvas></canvas>\n    \n    </ion-content>`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/charts/charts.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ChartsPage);
@@ -282,13 +283,13 @@ var ChartsPage = (function () {
 
 /***/ }),
 
-/***/ 324:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -306,7 +307,7 @@ var ExplorePage = (function () {
     }
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n		<ion-navbar style="text-align:center;">\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n					<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n				</div>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
+            selector: 'page-explore',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/explore/explore.html"*/`<ion-header>\n		<ion-navbar style="text-align:center;">\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n					<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n				</div>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/explore/explore.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ExplorePage);
@@ -317,14 +318,14 @@ var ExplorePage = (function () {
 
 /***/ }),
 
-/***/ 325:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -347,7 +348,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Settings\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n\n\n\n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Settings\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n\n\n\n</ion-content>`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], HomePage);
@@ -358,14 +359,15 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 326:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial_tutorial__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tutorial_tutorial__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -375,6 +377,42 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
 
 
 
@@ -385,37 +423,59 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var RegisterPage = (function () {
-    function RegisterPage(navCtrl, navParams) {
+    function RegisterPage(aFauth, navCtrl, navParams) {
+        this.aFauth = aFauth;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.user = {};
     }
     RegisterPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad RegisterPage');
     };
-    RegisterPage.prototype.segueToTut = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__tutorial_tutorial__["a" /* TutorialPage */]);
+    RegisterPage.prototype.segueToTut = function (user) {
+        return __awaiter(this, void 0, void 0, function () {
+            var result, e_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.aFauth.auth.createUserWithEmailAndPassword(user.email, user.password)];
+                    case 1:
+                        result = _a.sent();
+                        console.log(result);
+                        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__tutorial_tutorial__["a" /* TutorialPage */]);
+                        return [3 /*break*/, 3];
+                    case 2:
+                        e_1 = _a.sent();
+                        console.error(e_1);
+                        return [3 /*break*/, 3];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/register/register.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Register</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n    \n      <h2 style="text-align:center">Welcome user!</h2>\n    \n        <ion-list>\n            \n              <ion-item>\n                <ion-label floating>Name</ion-label>\n                <ion-input [(ngModel)]="name" type="text" value=""></ion-input>\n              </ion-item>\n            \n              <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input [(ngModel)]="email"  type="email" value=""></ion-input>\n              </ion-item>\n    \n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n              </ion-item>\n            \n            </ion-list>\n            <button ion-button round full (click)="segueToTut()"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  \n            \n            <br>\n            <br>\n    \n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/register/register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/register/register.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Register</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n    \n      <h2 style="text-align:center">Welcome user!</h2>\n    \n        <ion-list>\n            \n              <ion-item>\n                <ion-label floating>Name</ion-label>\n                <ion-input [(ngModel)]="name" type="text" value=""></ion-input>\n              </ion-item>\n            \n              <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input [(ngModel)]="user.email"  type="text" value=""></ion-input>\n              </ion-item>\n    \n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input [(ngModel)]="user.password"  type="password" value=""></ion-input>\n              </ion-item>\n            \n            </ion-list>\n            <button ion-button round full (click)="segueToTut(user)"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  \n            \n            <br>\n            <br>\n    \n    </ion-content>`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/register/register.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]) === "function" && _c || Object])
     ], RegisterPage);
     return RegisterPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=register.js.map
 
 /***/ }),
 
-/***/ 327:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -447,7 +507,7 @@ var TutorialPage = (function () {
     };
     TutorialPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tutorial',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tutorial/tutorial.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Getting Started</ion-title>\n        <ion-buttons end>\n            <button ion-button (click)="segueToMTabs()">\n                <ion-icon name="arrow-round-forward"></ion-icon>&nbsp;Skip\n            </button>\n            </ion-buttons>\n      </ion-navbar>\n      \n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      <ion-slides>\n        <ion-slide>\n          <h1>Find your Dream Destinations</h1>\n          <img src="../../assets/com.gif">\n          <p>\n            Make a traveling bucket list!\n          </p>\n          <p>\n            \n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Get the best Deal</h1>\n          <img src="../../assets/trav.gif">    \n          <p>\n            Search for the best deals using by Jet Blue\'s data set!\n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Vacation your way!</h1>\n          <img src="../../assets/travel.gif">\n          <p>\n            Make the most of your vacation time!\n          </p>\n          <button ion-button full round (click)="segueToMTabs()"><ion-icon name="thumbs-up"></ion-icon>&nbsp;Lets Go!</button>\n        </ion-slide>\n      </ion-slides>\n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tutorial/tutorial.html"*/,
+            selector: 'page-tutorial',template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/tutorial/tutorial.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Getting Started</ion-title>\n        <ion-buttons end>\n            <button ion-button (click)="segueToMTabs()">\n                <ion-icon name="arrow-round-forward"></ion-icon>&nbsp;Skip\n            </button>\n            </ion-buttons>\n      </ion-navbar>\n      \n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      <ion-slides>\n        <ion-slide>\n          <h1>Find your Dream Destinations</h1>\n          <img src="../../assets/com.gif">\n          <p>\n            Make a traveling bucket list!\n          </p>\n          <p>\n            \n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Get the best Deal</h1>\n          <img src="../../assets/trav.gif">    \n          <p>\n            Search for the best deals using by Jet Blue\'s data set!\n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Vacation your way!</h1>\n          <img src="../../assets/travel.gif">\n          <p>\n            Make the most of your vacation time!\n          </p>\n          <button ion-button full round (click)="segueToMTabs()"><ion-icon name="thumbs-up"></ion-icon>&nbsp;Lets Go!</button>\n        </ion-slide>\n      </ion-slides>\n    </ion-content>`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/pages/tutorial/tutorial.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], TutorialPage);
@@ -458,13 +518,13 @@ var TutorialPage = (function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(329);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(365);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -472,24 +532,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 352:
+/***/ 365:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_charts_charts__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_explore_explore__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_register_register__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tutorial_tutorial__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_charts_charts__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_explore_explore__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_register_register__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_firebase_config__ = __webpack_require__(506);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -509,37 +572,42 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_charts_charts__["a" /* ChartsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_explore_explore__["a" /* ExplorePage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tutorial_tutorial__["a" /* TutorialPage */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_charts_charts__["a" /* ChartsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_explore_explore__["a" /* ExplorePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__["a" /* TutorialPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: []
-                })
+                }),
+                __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_15__app_firebase_config__["a" /* FIREBASE_CONFIG */]),
+                __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["b" /* AngularFireAuthModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_charts_charts__["a" /* ChartsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_explore_explore__["a" /* ExplorePage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tutorial_tutorial__["a" /* TutorialPage */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_charts_charts__["a" /* ChartsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_explore_explore__["a" /* ExplorePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__["a" /* TutorialPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -555,16 +623,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 403:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -590,7 +658,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/shaunkh/Desktop/bucket-list-p2/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/shaunkh/Desktop/bucket-list-p2/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -601,240 +669,240 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 434:
+/***/ 488:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 209,
-	"./af.js": 209,
-	"./ar": 210,
-	"./ar-dz": 211,
-	"./ar-dz.js": 211,
-	"./ar-kw": 212,
-	"./ar-kw.js": 212,
-	"./ar-ly": 213,
-	"./ar-ly.js": 213,
-	"./ar-ma": 214,
-	"./ar-ma.js": 214,
-	"./ar-sa": 215,
-	"./ar-sa.js": 215,
-	"./ar-tn": 216,
-	"./ar-tn.js": 216,
-	"./ar.js": 210,
-	"./az": 217,
-	"./az.js": 217,
-	"./be": 218,
-	"./be.js": 218,
-	"./bg": 219,
-	"./bg.js": 219,
-	"./bn": 220,
-	"./bn.js": 220,
-	"./bo": 221,
-	"./bo.js": 221,
-	"./br": 222,
-	"./br.js": 222,
-	"./bs": 223,
-	"./bs.js": 223,
-	"./ca": 224,
-	"./ca.js": 224,
-	"./cs": 225,
-	"./cs.js": 225,
-	"./cv": 226,
-	"./cv.js": 226,
-	"./cy": 227,
-	"./cy.js": 227,
-	"./da": 228,
-	"./da.js": 228,
-	"./de": 229,
-	"./de-at": 230,
-	"./de-at.js": 230,
-	"./de-ch": 231,
-	"./de-ch.js": 231,
-	"./de.js": 229,
-	"./dv": 232,
-	"./dv.js": 232,
-	"./el": 233,
-	"./el.js": 233,
-	"./en-au": 234,
-	"./en-au.js": 234,
-	"./en-ca": 235,
-	"./en-ca.js": 235,
-	"./en-gb": 236,
-	"./en-gb.js": 236,
-	"./en-ie": 237,
-	"./en-ie.js": 237,
-	"./en-nz": 238,
-	"./en-nz.js": 238,
-	"./eo": 239,
-	"./eo.js": 239,
-	"./es": 240,
-	"./es-do": 241,
-	"./es-do.js": 241,
-	"./es.js": 240,
-	"./et": 242,
-	"./et.js": 242,
-	"./eu": 243,
-	"./eu.js": 243,
-	"./fa": 244,
-	"./fa.js": 244,
-	"./fi": 245,
-	"./fi.js": 245,
-	"./fo": 246,
-	"./fo.js": 246,
-	"./fr": 247,
-	"./fr-ca": 248,
-	"./fr-ca.js": 248,
-	"./fr-ch": 249,
-	"./fr-ch.js": 249,
-	"./fr.js": 247,
-	"./fy": 250,
-	"./fy.js": 250,
-	"./gd": 251,
-	"./gd.js": 251,
-	"./gl": 252,
-	"./gl.js": 252,
-	"./gom-latn": 253,
-	"./gom-latn.js": 253,
-	"./he": 254,
-	"./he.js": 254,
-	"./hi": 255,
-	"./hi.js": 255,
-	"./hr": 256,
-	"./hr.js": 256,
-	"./hu": 257,
-	"./hu.js": 257,
-	"./hy-am": 258,
-	"./hy-am.js": 258,
-	"./id": 259,
-	"./id.js": 259,
-	"./is": 260,
-	"./is.js": 260,
-	"./it": 261,
-	"./it.js": 261,
-	"./ja": 262,
-	"./ja.js": 262,
-	"./jv": 263,
-	"./jv.js": 263,
-	"./ka": 264,
-	"./ka.js": 264,
-	"./kk": 265,
-	"./kk.js": 265,
-	"./km": 266,
-	"./km.js": 266,
-	"./kn": 267,
-	"./kn.js": 267,
-	"./ko": 268,
-	"./ko.js": 268,
-	"./ky": 269,
-	"./ky.js": 269,
-	"./lb": 270,
-	"./lb.js": 270,
-	"./lo": 271,
-	"./lo.js": 271,
-	"./lt": 272,
-	"./lt.js": 272,
-	"./lv": 273,
-	"./lv.js": 273,
-	"./me": 274,
-	"./me.js": 274,
-	"./mi": 275,
-	"./mi.js": 275,
-	"./mk": 276,
-	"./mk.js": 276,
-	"./ml": 277,
-	"./ml.js": 277,
-	"./mr": 278,
-	"./mr.js": 278,
-	"./ms": 279,
-	"./ms-my": 280,
-	"./ms-my.js": 280,
-	"./ms.js": 279,
-	"./my": 281,
-	"./my.js": 281,
-	"./nb": 282,
-	"./nb.js": 282,
-	"./ne": 283,
-	"./ne.js": 283,
-	"./nl": 284,
-	"./nl-be": 285,
-	"./nl-be.js": 285,
-	"./nl.js": 284,
-	"./nn": 286,
-	"./nn.js": 286,
-	"./pa-in": 287,
-	"./pa-in.js": 287,
-	"./pl": 288,
-	"./pl.js": 288,
-	"./pt": 289,
-	"./pt-br": 290,
-	"./pt-br.js": 290,
-	"./pt.js": 289,
-	"./ro": 291,
-	"./ro.js": 291,
-	"./ru": 292,
-	"./ru.js": 292,
-	"./sd": 293,
-	"./sd.js": 293,
-	"./se": 294,
-	"./se.js": 294,
-	"./si": 295,
-	"./si.js": 295,
-	"./sk": 296,
-	"./sk.js": 296,
-	"./sl": 297,
-	"./sl.js": 297,
-	"./sq": 298,
-	"./sq.js": 298,
-	"./sr": 299,
-	"./sr-cyrl": 300,
-	"./sr-cyrl.js": 300,
-	"./sr.js": 299,
-	"./ss": 301,
-	"./ss.js": 301,
-	"./sv": 302,
-	"./sv.js": 302,
-	"./sw": 303,
-	"./sw.js": 303,
-	"./ta": 304,
-	"./ta.js": 304,
-	"./te": 305,
-	"./te.js": 305,
-	"./tet": 306,
-	"./tet.js": 306,
-	"./th": 307,
-	"./th.js": 307,
-	"./tl-ph": 308,
-	"./tl-ph.js": 308,
-	"./tlh": 309,
-	"./tlh.js": 309,
-	"./tr": 310,
-	"./tr.js": 310,
-	"./tzl": 311,
-	"./tzl.js": 311,
-	"./tzm": 312,
-	"./tzm-latn": 313,
-	"./tzm-latn.js": 313,
-	"./tzm.js": 312,
-	"./uk": 314,
-	"./uk.js": 314,
-	"./ur": 315,
-	"./ur.js": 315,
-	"./uz": 316,
-	"./uz-latn": 317,
-	"./uz-latn.js": 317,
-	"./uz.js": 316,
-	"./vi": 318,
-	"./vi.js": 318,
-	"./x-pseudo": 319,
-	"./x-pseudo.js": 319,
-	"./yo": 320,
-	"./yo.js": 320,
-	"./zh-cn": 321,
-	"./zh-cn.js": 321,
-	"./zh-hk": 322,
-	"./zh-hk.js": 322,
-	"./zh-tw": 323,
-	"./zh-tw.js": 323
+	"./af": 223,
+	"./af.js": 223,
+	"./ar": 224,
+	"./ar-dz": 225,
+	"./ar-dz.js": 225,
+	"./ar-kw": 226,
+	"./ar-kw.js": 226,
+	"./ar-ly": 227,
+	"./ar-ly.js": 227,
+	"./ar-ma": 228,
+	"./ar-ma.js": 228,
+	"./ar-sa": 229,
+	"./ar-sa.js": 229,
+	"./ar-tn": 230,
+	"./ar-tn.js": 230,
+	"./ar.js": 224,
+	"./az": 231,
+	"./az.js": 231,
+	"./be": 232,
+	"./be.js": 232,
+	"./bg": 233,
+	"./bg.js": 233,
+	"./bn": 234,
+	"./bn.js": 234,
+	"./bo": 235,
+	"./bo.js": 235,
+	"./br": 236,
+	"./br.js": 236,
+	"./bs": 237,
+	"./bs.js": 237,
+	"./ca": 238,
+	"./ca.js": 238,
+	"./cs": 239,
+	"./cs.js": 239,
+	"./cv": 240,
+	"./cv.js": 240,
+	"./cy": 241,
+	"./cy.js": 241,
+	"./da": 242,
+	"./da.js": 242,
+	"./de": 243,
+	"./de-at": 244,
+	"./de-at.js": 244,
+	"./de-ch": 245,
+	"./de-ch.js": 245,
+	"./de.js": 243,
+	"./dv": 246,
+	"./dv.js": 246,
+	"./el": 247,
+	"./el.js": 247,
+	"./en-au": 248,
+	"./en-au.js": 248,
+	"./en-ca": 249,
+	"./en-ca.js": 249,
+	"./en-gb": 250,
+	"./en-gb.js": 250,
+	"./en-ie": 251,
+	"./en-ie.js": 251,
+	"./en-nz": 252,
+	"./en-nz.js": 252,
+	"./eo": 253,
+	"./eo.js": 253,
+	"./es": 254,
+	"./es-do": 255,
+	"./es-do.js": 255,
+	"./es.js": 254,
+	"./et": 256,
+	"./et.js": 256,
+	"./eu": 257,
+	"./eu.js": 257,
+	"./fa": 258,
+	"./fa.js": 258,
+	"./fi": 259,
+	"./fi.js": 259,
+	"./fo": 260,
+	"./fo.js": 260,
+	"./fr": 261,
+	"./fr-ca": 262,
+	"./fr-ca.js": 262,
+	"./fr-ch": 263,
+	"./fr-ch.js": 263,
+	"./fr.js": 261,
+	"./fy": 264,
+	"./fy.js": 264,
+	"./gd": 265,
+	"./gd.js": 265,
+	"./gl": 266,
+	"./gl.js": 266,
+	"./gom-latn": 267,
+	"./gom-latn.js": 267,
+	"./he": 268,
+	"./he.js": 268,
+	"./hi": 269,
+	"./hi.js": 269,
+	"./hr": 270,
+	"./hr.js": 270,
+	"./hu": 271,
+	"./hu.js": 271,
+	"./hy-am": 272,
+	"./hy-am.js": 272,
+	"./id": 273,
+	"./id.js": 273,
+	"./is": 274,
+	"./is.js": 274,
+	"./it": 275,
+	"./it.js": 275,
+	"./ja": 276,
+	"./ja.js": 276,
+	"./jv": 277,
+	"./jv.js": 277,
+	"./ka": 278,
+	"./ka.js": 278,
+	"./kk": 279,
+	"./kk.js": 279,
+	"./km": 280,
+	"./km.js": 280,
+	"./kn": 281,
+	"./kn.js": 281,
+	"./ko": 282,
+	"./ko.js": 282,
+	"./ky": 283,
+	"./ky.js": 283,
+	"./lb": 284,
+	"./lb.js": 284,
+	"./lo": 285,
+	"./lo.js": 285,
+	"./lt": 286,
+	"./lt.js": 286,
+	"./lv": 287,
+	"./lv.js": 287,
+	"./me": 288,
+	"./me.js": 288,
+	"./mi": 289,
+	"./mi.js": 289,
+	"./mk": 290,
+	"./mk.js": 290,
+	"./ml": 291,
+	"./ml.js": 291,
+	"./mr": 292,
+	"./mr.js": 292,
+	"./ms": 293,
+	"./ms-my": 294,
+	"./ms-my.js": 294,
+	"./ms.js": 293,
+	"./my": 295,
+	"./my.js": 295,
+	"./nb": 296,
+	"./nb.js": 296,
+	"./ne": 297,
+	"./ne.js": 297,
+	"./nl": 298,
+	"./nl-be": 299,
+	"./nl-be.js": 299,
+	"./nl.js": 298,
+	"./nn": 300,
+	"./nn.js": 300,
+	"./pa-in": 301,
+	"./pa-in.js": 301,
+	"./pl": 302,
+	"./pl.js": 302,
+	"./pt": 303,
+	"./pt-br": 304,
+	"./pt-br.js": 304,
+	"./pt.js": 303,
+	"./ro": 305,
+	"./ro.js": 305,
+	"./ru": 306,
+	"./ru.js": 306,
+	"./sd": 307,
+	"./sd.js": 307,
+	"./se": 308,
+	"./se.js": 308,
+	"./si": 309,
+	"./si.js": 309,
+	"./sk": 310,
+	"./sk.js": 310,
+	"./sl": 311,
+	"./sl.js": 311,
+	"./sq": 312,
+	"./sq.js": 312,
+	"./sr": 313,
+	"./sr-cyrl": 314,
+	"./sr-cyrl.js": 314,
+	"./sr.js": 313,
+	"./ss": 315,
+	"./ss.js": 315,
+	"./sv": 316,
+	"./sv.js": 316,
+	"./sw": 317,
+	"./sw.js": 317,
+	"./ta": 318,
+	"./ta.js": 318,
+	"./te": 319,
+	"./te.js": 319,
+	"./tet": 320,
+	"./tet.js": 320,
+	"./th": 321,
+	"./th.js": 321,
+	"./tl-ph": 322,
+	"./tl-ph.js": 322,
+	"./tlh": 323,
+	"./tlh.js": 323,
+	"./tr": 324,
+	"./tr.js": 324,
+	"./tzl": 325,
+	"./tzl.js": 325,
+	"./tzm": 326,
+	"./tzm-latn": 327,
+	"./tzm-latn.js": 327,
+	"./tzm.js": 326,
+	"./uk": 328,
+	"./uk.js": 328,
+	"./ur": 329,
+	"./ur.js": 329,
+	"./uz": 330,
+	"./uz-latn": 331,
+	"./uz-latn.js": 331,
+	"./uz.js": 330,
+	"./vi": 332,
+	"./vi.js": 332,
+	"./x-pseudo": 333,
+	"./x-pseudo.js": 333,
+	"./yo": 334,
+	"./yo.js": 334,
+	"./zh-cn": 335,
+	"./zh-cn.js": 335,
+	"./zh-hk": 336,
+	"./zh-hk.js": 336,
+	"./zh-tw": 337,
+	"./zh-tw.js": 337
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -850,9 +918,26 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 434;
+webpackContext.id = 488;
+
+/***/ }),
+
+/***/ 506:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FIREBASE_CONFIG; });
+var FIREBASE_CONFIG = {
+    apiKey: "AIzaSyDACq0bO-Ksz8E55oFeXokoT-J2ijR6F4I",
+    authDomain: "fir-auth-906a3.firebaseapp.com",
+    databaseURL: "https://fir-auth-906a3.firebaseio.com",
+    projectId: "fir-auth-906a3",
+    storageBucket: "fir-auth-906a3.appspot.com",
+    messagingSenderId: "16280700101"
+};
+//# sourceMappingURL=app.firebase.config.js.map
 
 /***/ })
 
-},[328]);
+},[342]);
 //# sourceMappingURL=main.js.map

@@ -20,16 +20,16 @@
             
               <ion-item>
                 <ion-label floating>Email</ion-label>
-                <ion-input [(ngModel)]="email"  type="email" value=""></ion-input>
+                <ion-input [(ngModel)]="user.email"  type="text" value=""></ion-input>
               </ion-item>
     
               <ion-item>
                   <ion-label floating>Password</ion-label>
-                  <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+                  <ion-input [(ngModel)]="user.password"  type="password" value=""></ion-input>
               </ion-item>
             
             </ion-list>
-            <button ion-button round full (click)="segueToTut()"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  
+            <button ion-button round full (click)="segueToTut(user)"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  
             
             <br>
             <br>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { RegisterPage } from '../register/register';
+import {User} from "../../models/user";
 /**
  * Generated class for the LoginPage page.
  *
@@ -15,6 +16,7 @@ import { RegisterPage } from '../register/register';
 })
 export class LoginPage {
 
+  user = {} as User;
   splash = true;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
