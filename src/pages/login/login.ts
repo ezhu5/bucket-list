@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { RegisterPage } from '../register/register';
 import {User} from "../../models/user";
+import {AngularFireAuth } from 'angularfire2/auth';
 /**
  * Generated class for the LoginPage page.
  *
@@ -19,7 +20,8 @@ export class LoginPage {
   user = {} as User;
   splash = true;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -30,8 +32,17 @@ export class LoginPage {
     
      }
 
-  segueToMTabs() {
-    this.navCtrl.push(TabsPage);
+  async segueToMTabs(user: User) {
+    try{
+    const result = await this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+    
+    if (result){
+      this.navCtrl.push(TabsPage);    
+     }
+    } catch (e) {
+      console.error(e);
+    }
+    // this.navCtrl.push(TabsPage);
   }
 
   segueToReg() {
