@@ -9,6 +9,7 @@ import { Chart } from 'chart.js';
 export class ChartsPage {
 
     @ViewChild('barCanvas') barCanvas;
+    @ViewChild('barCanvas2') barCanvas2;
     @ViewChild('doughnutCanvas') doughnutCanvas;
     @ViewChild('lineCanvas') lineCanvas;
 
@@ -26,10 +27,10 @@ export class ChartsPage {
 
             type: 'bar',
             data: {
-                labels: ["MAR", "APR", "MAY", "JUN", "JUL", "AUG"],
+                labels: ["Burbank", "Albuquerque", "Seattle", "Austin", "Las Vegas", "Palm Springs"],
                 datasets: [{
-                    label: 'USD $',
-                    data: [800, 705, 930, 1330, 1040, 670],
+                    label: 'Final Score',
+                    data: [918, 943, 937, 898, 889, 881],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -60,6 +61,52 @@ export class ChartsPage {
             }
 
         });
+
+
+
+
+        this.barChart = new Chart(this.barCanvas2.nativeElement, {
+            
+                        type: 'bar',
+                        data: {
+                            labels: ["Santiago, Chile", "Cancun, Mexico", "Providenciales, Caicos Islands", "Oranjestad, Aruba", "Grand Cayman, Cayman Islands", "Havana, Cuba"],
+                            datasets: [{
+                                label: 'Final Score',
+                                data: [860, 847, 830, 726, 722, 712],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255,99,132,1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero:true
+                                    }
+                                }]
+                            }
+                        }
+            
+                    });
+
+
+
+
 
         this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
 

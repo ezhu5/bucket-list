@@ -4,6 +4,11 @@ import { TabsPage } from '../tabs/tabs';
 import { RegisterPage } from '../register/register';
 import {User} from "../../models/user";
 import {AngularFireAuth } from 'angularfire2/auth';
+
+
+import { AlertController } from 'ionic-angular';
+
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -21,7 +26,8 @@ export class LoginPage {
   splash = true;
 
   constructor(private afAuth: AngularFireAuth,
-    public navCtrl: NavController, public navParams: NavParams) {
+    public navCtrl: NavController, public navParams: NavParams,
+    private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -39,6 +45,15 @@ export class LoginPage {
     if (result){
       this.navCtrl.push(TabsPage);    
      }
+    if (!result) {
+        //this.presentAlert();
+        let alert = this.alertCtrl.create({
+      title: 'Invalid Username/Password',
+      subTitle: 'Please review your account information and try again.',
+      buttons: ['Okay']
+    });
+    alert.present();
+     }
     } catch (e) {
       console.error(e);
     }
@@ -47,6 +62,15 @@ export class LoginPage {
 
   segueToReg() {
     this.navCtrl.push(RegisterPage);
+  }
+
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Invalid Username/Password',
+      subTitle: 'Please review your account information and try again.',
+      buttons: ['Okay']
+    });
+    alert.present();
   }
 
 }
