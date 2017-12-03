@@ -112,7 +112,7 @@ export class ChartsPage {
 
             type: 'doughnut',
             data: {
-                labels: ["USA", "Italy", "England", "Spain", "Japan", "Iceland"],
+                labels: ["USA", "Cuba", "England", "Spain", "Japan", "Iceland"],
                 datasets: [{
                     label: 'Most Traveled Countires (%)',
                     data: [10, 19, 4, 25, 22, 20],
