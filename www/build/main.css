@@ -25685,11 +25685,11 @@ page-explore .imagewrap {
 
 page-explore .button1 {
   position: absolute;
-  bottom: 7.5%;
-  left: 2.5%;
+  bottom: 14%;
+  left: 38%;
   color: white;
-  border-radius: 20px;
-  background-color: dodgerblue;
+  background-color: transparent;
+  border-radius: 30px;
   font-size: 0.75em;
 }
 
@@ -25716,13 +25716,13 @@ page-explore img {
 }
 
 page-explore button {
-  width: 40px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   position: relative;
 }
 
 page-explore ion-icon {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 page-login {

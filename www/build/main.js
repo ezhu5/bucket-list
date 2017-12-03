@@ -4,84 +4,10 @@ webpackJsonp([0],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_charts__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(325);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TabsPage = (function () {
-    function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__explore_explore__["a" /* ExplorePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__charts_charts__["a" /* ChartsPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-    }
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Explore" tabIcon="globe"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Analytics" tabIcon="analytics"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profile" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/tabs/tabs.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], TabsPage);
-    return TabsPage;
-}());
-
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-
-/***/ 117:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 117;
-
-/***/ }),
-
-/***/ 158:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 158;
-
-/***/ }),
-
-/***/ 202:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(326);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -122,7 +48,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/login/login.html"*/`\n<div id="custom-overlay" [style.display]="splash ? \'flex\': \'none\'">\n    <div class="flb">\n      <div class="Aligner-item Aligner-item--top"></div>\n        <img src="../../assets/bl.png" style="align:center; width:75%">\n      <div class="Aligner-item Aligner-item--bottom"></div>\n    </div>\n  </div>\n\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Bucket List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n  <h2 style="color:white; text-align:center">Login</h2>\n\n  <img style="align:center; width:85%" src="../../assets/bl.png">\n  <br>\n  <br>\n  <ion-list>\n    \n      <ion-item>\n        <ion-label floating>Email</ion-label>\n        <ion-input [(ngModel)]="email" type="text" value=""></ion-input>\n      </ion-item>\n    \n      <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n      </ion-item>\n    \n    </ion-list>\n    \n    <button ion-button round full (click)="segueToMTabs()"><ion-icon name="log-in"></ion-icon>&nbsp;Login</button>\n    <button ion-button round full (click)="segueToReg()"><ion-icon name="person-add"></ion-icon>&nbsp;New User</button>  \n  \n</ion-content>`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/login/login.html"*/`\n<div id="custom-overlay" [style.display]="splash ? \'flex\': \'none\'">\n    <div class="flb">\n      <div class="Aligner-item Aligner-item--top"></div>\n        <img src="../../assets/bl.png" style="align:center; width:75%">\n      <div class="Aligner-item Aligner-item--bottom"></div>\n    </div>\n  </div>\n\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Bucket List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n  <h2 style="color:white; text-align:center">Login</h2>\n\n  <img style="align:center; width:85%" src="../../assets/bl.png">\n  <br>\n  <br>\n  <ion-list>\n    \n      <ion-item>\n        <ion-label floating>Email</ion-label>\n        <ion-input [(ngModel)]="email" type="text" value=""></ion-input>\n      </ion-item>\n    \n      <ion-item>\n        <ion-label floating>Password</ion-label>\n        <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n      </ion-item>\n    \n    </ion-list>\n    \n    <button ion-button round full (click)="segueToMTabs()"><ion-icon name="log-in"></ion-icon>&nbsp;Login</button>\n    <button ion-button round full (click)="segueToReg()"><ion-icon name="person-add"></ion-icon>&nbsp;New User</button>  \n  \n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], LoginPage);
@@ -130,6 +56,80 @@ var LoginPage = (function () {
 }());
 
 //# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__charts_charts__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(325);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__explore_explore__["a" /* ExplorePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__charts_charts__["a" /* ChartsPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Explore" tabIcon="globe"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Analytics" tabIcon="analytics"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profile" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tabs/tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 118:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 118;
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 159;
 
 /***/ }),
 
@@ -164,8 +164,8 @@ var ChartsPage = (function () {
             data: {
                 labels: ["MAR", "APR", "MAY", "JUN", "JUL", "AUG"],
                 datasets: [{
-                        label: 'Monthly Waste (lbs)',
-                        data: [80, 35, 53, 133, 24, 40],
+                        label: 'USD $',
+                        data: [800, 705, 930, 1330, 1040, 670],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -198,9 +198,9 @@ var ChartsPage = (function () {
         this.doughnutChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.doughnutCanvas.nativeElement, {
             type: 'doughnut',
             data: {
-                labels: ["CO2", "Plastic", "Paper", "Water", "Energy", "Food"],
+                labels: ["USA", "Italy", "England", "Spain", "Japan", "Iceland"],
                 datasets: [{
-                        label: 'Waste Distribution (%)',
+                        label: 'Most Traveled Countires (%)',
                         data: [10, 19, 4, 25, 22, 20],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
@@ -230,7 +230,7 @@ var ChartsPage = (function () {
                     "", "JUL", "", "AUG",],
                 datasets: [
                     {
-                        label: "Net Karma",
+                        label: "Net Travel Rewards Points",
                         fill: false,
                         lineTension: .01,
                         backgroundColor: "rgba(26, 196, 34, .4)",
@@ -271,7 +271,7 @@ var ChartsPage = (function () {
     ], ChartsPage.prototype, "lineCanvas", void 0);
     ChartsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-charts',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/charts/charts.html"*/`\n<ion-header>\n    \n      <ion-navbar style="text-align:center;">\n        <ion-title>Charts</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      \n         <h2>Average Trip Price: Spain</h2> \n       \n          <canvas #barCanvas></canvas>\n    \n        <h2>Flight Popularity</h2>\n          <canvas #doughnutCanvas></canvas>\n      \n    <h2>Points Earned</h2>\n    \n          <canvas #lineCanvas></canvas>\n    \n    </ion-content>`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/charts/charts.html"*/
+            selector: 'page-charts',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/`\n<ion-header>\n    \n      <ion-navbar style="text-align:center;">\n        <ion-title>Charts</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      \n         <h2>Average Trip Price: Spain</h2> \n       \n          <canvas #barCanvas></canvas>\n    \n        <h2>Flight Popularity</h2>\n          <canvas #doughnutCanvas></canvas>\n      \n    <h2>Points Earned</h2>\n    \n          <canvas #lineCanvas></canvas>\n    \n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ChartsPage);
@@ -306,7 +306,7 @@ var ExplorePage = (function () {
     }
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/explore/explore.html"*/`<ion-header>\n		<ion-navbar style="text-align:center;">\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n						<input type="button" class="button1" value="+" />\n				</div>\n		</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<input type="button" class="button1" value="+" />\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<input type="button" class="button1" value="+" />\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<input type="button" class="button1" value="+" />\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<input type="button" class="button1" value="+" />\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<input type="button" class="button1" value="+" />\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<input type="button" class="button1" value="+" />\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<input type="button" class="button1" value="+" />\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<input type="button" class="button1" value="+" />\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<input type="button" class="button1" value="+" />\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<input type="button" class="button1" value="+" />\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/explore/explore.html"*/
+            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n		<ion-navbar style="text-align:center;">\n    <ion-title>\n      Explore\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n					<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n				</div>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<button type="button" class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n					</button>\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<button type="button" class="button1">\n							<ion-icon name="arrow-up"></ion-icon>\n						</button>\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ExplorePage);
@@ -324,6 +324,7 @@ var ExplorePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -335,15 +336,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HomePage = (function () {
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
+    HomePage.prototype.logout = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Settings\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n\n\n\n</ion-content>`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Settings\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n\n\n\n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], HomePage);
     return HomePage;
 }());
@@ -391,7 +397,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/register/register.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Register</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n    \n      <h2 style="text-align:center">Welcome user!</h2>\n    \n        <ion-list>\n            \n              <ion-item>\n                <ion-label floating>Name</ion-label>\n                <ion-input [(ngModel)]="name" type="text" value=""></ion-input>\n              </ion-item>\n            \n              <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input [(ngModel)]="email"  type="email" value=""></ion-input>\n              </ion-item>\n    \n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n              </ion-item>\n            \n            </ion-list>\n            <button ion-button round full (click)="segueToTut()"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  \n            \n            <br>\n            <br>\n    \n    </ion-content>`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/register/register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/register/register.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Register</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n    \n      <h2 style="text-align:center">Welcome user!</h2>\n    \n        <ion-list>\n            \n              <ion-item>\n                <ion-label floating>Name</ion-label>\n                <ion-input [(ngModel)]="name" type="text" value=""></ion-input>\n              </ion-item>\n            \n              <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input [(ngModel)]="email"  type="email" value=""></ion-input>\n              </ion-item>\n    \n              <ion-item>\n                  <ion-label floating>Password</ion-label>\n                  <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>\n              </ion-item>\n            \n            </ion-list>\n            <button ion-button round full (click)="segueToTut()"><ion-icon name="person-add"></ion-icon>&nbsp;Register</button>  \n            \n            <br>\n            <br>\n    \n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/register/register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], RegisterPage);
@@ -409,7 +415,7 @@ var RegisterPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -441,7 +447,7 @@ var TutorialPage = (function () {
     };
     TutorialPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tutorial',template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/tutorial/tutorial.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Getting Started</ion-title>\n        <ion-buttons end>\n            <button ion-button (click)="segueToMTabs()">\n                <ion-icon name="arrow-round-forward"></ion-icon>&nbsp;Skip\n            </button>\n            </ion-buttons>\n      </ion-navbar>\n      \n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      <ion-slides>\n        <ion-slide>\n          <h1>Find your Dream Destinations</h1>\n          <img src="../../assets/com.gif">\n          <p>\n            Make a traveling bucket list!\n          </p>\n          <p>\n            \n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Get the best Deal</h1>\n          <img src="../../assets/trav.gif">    \n          <p>\n            Search for the best deals using by Jet Blue\'s data set!\n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Vacation your way!</h1>\n          <img src="../../assets/travel.gif">\n          <p>\n            Make the most of your vacation time!\n          </p>\n          <button ion-button full round (click)="segueToMTabs()"><ion-icon name="thumbs-up"></ion-icon>&nbsp;Lets Go!</button>\n        </ion-slide>\n      </ion-slides>\n    </ion-content>`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/pages/tutorial/tutorial.html"*/,
+            selector: 'page-tutorial',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tutorial/tutorial.html"*/`<ion-header>\n    \n      <ion-navbar>\n        <ion-title>Getting Started</ion-title>\n        <ion-buttons end>\n            <button ion-button (click)="segueToMTabs()">\n                <ion-icon name="arrow-round-forward"></ion-icon>&nbsp;Skip\n            </button>\n            </ion-buttons>\n      </ion-navbar>\n      \n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      <ion-slides>\n        <ion-slide>\n          <h1>Find your Dream Destinations</h1>\n          <img src="../../assets/com.gif">\n          <p>\n            Make a traveling bucket list!\n          </p>\n          <p>\n            \n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Get the best Deal</h1>\n          <img src="../../assets/trav.gif">    \n          <p>\n            Search for the best deals using by Jet Blue\'s data set!\n          </p>\n        </ion-slide>\n        <ion-slide>\n          <h1>Vacation your way!</h1>\n          <img src="../../assets/travel.gif">\n          <p>\n            Make the most of your vacation time!\n          </p>\n          <button ion-button full round (click)="segueToMTabs()"><ion-icon name="thumbs-up"></ion-icon>&nbsp;Lets Go!</button>\n        </ion-slide>\n      </ion-slides>\n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/tutorial/tutorial.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
     ], TutorialPage);
@@ -474,14 +480,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_charts_charts__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_explore_explore__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_register_register__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tutorial_tutorial__ = __webpack_require__(327);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -556,9 +562,9 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -584,7 +590,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/reecegriffith/Desktop/bucket-list-p2/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/reecegriffith/Desktop/bucket-list-p2/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
