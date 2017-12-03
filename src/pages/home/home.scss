@@ -1,3 +1,35 @@
 page-home {
 
+	.imagewrap {display:inline-block;position:relative;}
+
+	.button1 {
+		position:absolute;
+		bottom:14%;
+		color:white;
+		background-color:rgba(0,0,0,0);
+		border-radius:30px;
+		font-size:0.75em;
+	}
+
+	.lcolumn {
+		width: 50%;
+		padding-right: 6px;
+	}
+
+	.rcolumn {
+		width: 50%;
+		padding-left: 6px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	img {
+		border-radius: 10px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
 }

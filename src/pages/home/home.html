@@ -72,7 +72,55 @@
 
   </ion-list>
     
+  <div class="row">
+    <div class="lcolumn">
+      <div>
+        <div class="imagewrap">
+            <img src="../../assets/imgs/spain.jpg" alt="Barcelona">
+            <ion-fab>
+            <button ion-fab mini class="button1">
+            <ion-icon name="arrow-up"></ion-icon>
+            </button>
+            <ion-fab-list side="top">
+              <button type="button" class="location">
+                Spain
+              </button>
+            </ion-fab-list>
+          </ion-fab>
+        </div>
 
+    <div class="imagewrap">
+            <img src="../../assets/imgs/paris.jpg" alt="France">
+            <ion-fab>
+            <button ion-fab mini class="button1">
+            <ion-icon name="arrow-up"></ion-icon>
+            </button>
+            <ion-fab-list side="top">
+              <button type="button" class="location">
+                France
+              </button>
+            </ion-fab-list>
+          </ion-fab>
+        </div>
+      </div>
+    </div>
+
+  <div class="rcolumn">
+    <div class="imagewrap">
+            <img src="../../assets/imgs/havana.jpg" alt="Cuba">
+            <ion-fab>
+            <button ion-fab mini class="button1">
+            <ion-icon name="arrow-up"></ion-icon>
+            </button>
+            <ion-fab-list side="top">
+              <button (click)="toCuba()" type="button" class="location">
+                Cuba
+              </button>
+            </ion-fab-list>
+          </ion-fab>
+      </div>
+    </div>
+  </div>
 
 
 </ion-content>

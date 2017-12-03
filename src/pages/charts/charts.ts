@@ -54,7 +54,7 @@ export class ChartsPage {
                 scales: {
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true
+                            beginAtZero:false
                         }
                     }]
                 }
@@ -96,7 +96,7 @@ export class ChartsPage {
                             scales: {
                                 yAxes: [{
                                     ticks: {
-                                        beginAtZero:true
+                                        beginAtZero:false
                                     }
                                 }]
                             }

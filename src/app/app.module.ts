@@ -14,7 +14,10 @@ import { ExplorePage } from '../pages/explore/explore';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { TutorialPage } from '../pages/tutorial/tutorial';
+import { CubaPage } from '../pages/cuba/cuba';
 import { FIREBASE_CONFIG } from './app.firebase.config';
+
+
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     ExplorePage,
     LoginPage,
     RegisterPage,
+    CubaPage,
     TutorialPage
+    
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,9 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     ExplorePage,
     LoginPage,
     RegisterPage,
+    CubaPage,
     TutorialPage
+    
   ],
   providers: [
     StatusBar,

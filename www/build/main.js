@@ -268,7 +268,7 @@ var ChartsPage = (function () {
                 scales: {
                     yAxes: [{
                             ticks: {
-                                beginAtZero: true
+                                beginAtZero: false
                             }
                         }]
                 }
@@ -304,7 +304,7 @@ var ChartsPage = (function () {
                 scales: {
                     yAxes: [{
                             ticks: {
-                                beginAtZero: true
+                                beginAtZero: false
                             }
                         }]
                 }
@@ -392,9 +392,10 @@ var ChartsPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-charts',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/`\n<ion-header>\n    \n      <ion-navbar style="text-align:center;">\n        <ion-title>Analytics</ion-title>\n      </ion-navbar>\n    \n    </ion-header>\n    \n    \n    <ion-content padding>\n      \n         <h2>Most Valued Domestic Flights</h2>\n         <h4>HOT DEALS</h4>\n       \n          <canvas #barCanvas></canvas>\n\n          <h2>Most Valued International Flights</h2> \n          \n             <canvas #barCanvas2></canvas>\n    \n        <h2>Your Most Traveled Locations</h2>\n          <canvas #doughnutCanvas></canvas>\n      \n    <h2>Travel Points Earned</h2>\n    \n          <canvas #lineCanvas></canvas>\n    \n    </ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/charts/charts.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
     ], ChartsPage);
     return ChartsPage;
+    var _a;
 }());
 
 //# sourceMappingURL=charts.js.map
@@ -408,6 +409,7 @@ var ChartsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cuba_cuba__ = __webpack_require__(507);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -419,17 +421,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ExplorePage = (function () {
-    function ExplorePage(navCtrl) {
+    function ExplorePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
+    ExplorePage.prototype.toCuba = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__cuba_cuba__["a" /* CubaPage */]);
+    };
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n	<ion-navbar style="text-align:center;">\n		<ion-icon style="color:white" name="search"></ion-icon>\n	    <input type="text" name="search" placeholder="Search" style="color:black;" style="background-color:dodgerblue">\n  	</ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n					<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Arizona, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Hawaii, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n						<img src="../../assets/imgs/havana.jpg" alt="Cuba">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Cuba\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Canada\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Hawaii, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n						<img src="../../assets/imgs/paris.jpg" alt="France">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								France\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								NC, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Washington, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Netherlands\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Switzerland\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Switzerland\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Austria\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/spain.jpg" alt="Barcelona">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Spain\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								California, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
+            selector: 'page-explore',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/`<ion-header>\n	<ion-navbar style="text-align:center;">\n		<ion-icon style="color:white" name="search"></ion-icon>\n	    <input type="text" name="search" placeholder="Search" style="color:black;" style="background-color:dodgerblue">\n  	</ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div class="row">\n		<div class="lcolumn">\n			<div>\n				<div class="imagewrap">\n					<img src="../../assets/imgs/arizona.jpg" alt="Arizona">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Arizona, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/venus-pool-maui.jpg" alt="Maui">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Hawaii, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n						<img src="../../assets/imgs/havana.jpg" alt="Cuba">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button (click)="toCuba()" type="button" class="location">\n								Cuba\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/britishcolumbia.jpg" alt="British Columbia">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Canada\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/haleakala.jpg" alt="Maui">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Hawaii, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n						<img src="../../assets/imgs/paris.jpg" alt="France">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								France\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/looking-glass-nc.jpg" alt="North Carolina">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								NC, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>\n			<div class="imagewrap">\n					<img src="../../assets/imgs/cascademtn-wa.jpg" alt="Washington">\n					<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Washington, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n			</div>	\n		</div>\n\n		<div class="rcolumn">\n				<div class="imagewrap">\n						<img src="../../assets/imgs/netherlands.jpg" alt="Netherlands">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Netherlands\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/swiss-alps.jpg" alt="Switzerland">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Switzerland\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/switzerland.jpg" alt="Switzerland">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Switzerland\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/austria.jpg" alt="Austria">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Austria\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/spain.jpg" alt="Barcelona">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								Spain\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n				<div class="imagewrap">\n						<img src="../../assets/imgs/yosemite.jpg" alt="California">\n						<ion-fab>\n						<button ion-fab mini class="button1">\n						<ion-icon name="arrow-up"></ion-icon>\n						</button>\n						<ion-fab-list side="top">\n							<button type="button" class="location">\n								California, US\n							</button>\n							<button ion-fab class="save">\n								<ion-icon name="bookmark"></ion-icon>\n							</button>\n						</ion-fab-list>\n					</ion-fab>\n				</div>\n		</div>\n	</div>\n</ion-content>\n`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/explore/explore.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
     ], ExplorePage);
     return ExplorePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=explore.js.map
@@ -444,6 +452,7 @@ var ExplorePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cuba_cuba__ = __webpack_require__(507);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -456,6 +465,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = (function () {
     function HomePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
@@ -464,13 +474,17 @@ var HomePage = (function () {
     HomePage.prototype.logout = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
     };
+    HomePage.prototype.toCuba = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cuba_cuba__["a" /* CubaPage */]);
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Profile\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n\n\n\n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar style="text-align:center;">\n      <ion-title>\n        Profile\n      </ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n<ion-content>\n\n  <ion-list>\n      <ion-list-header>\n        Your Profile\n      </ion-list-header>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/robin.jpg">\n        </ion-avatar>\n        <h2>Robin Hayes</h2>\n        <p>Travel the world!</p>\n      </ion-item>\n        \n        <ion-item>\n            <ion-icon name="people" item-start></ion-icon>\n            Friends\n            <ion-badge item-end>18</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="planet" item-start></ion-icon>\n            Travel Points\n            <ion-badge item-end style="background-color:dodgerblue">820</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Budget Current/Goal:\n            <ion-badge item-end style="background-color:dodgerblue">$2k/2.5k</ion-badge>\n        </ion-item>\n  \n        <ion-item>\n            <ion-icon name="checkbox" item-start></ion-icon>\n            Trips Taken/Planned:\n            <ion-badge item-end>11/27</ion-badge>\n        </ion-item>\n  \n    </ion-list>\n    \n  <ion-list>\n    \n    <ion-list-header>\n      Your Bucket List\n    </ion-list-header>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Paris, France\n      <ion-badge item-end style="background-color:green">$2k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Barcelona, Spain\n      <ion-badge item-end style="background-color:red">$2.5k</ion-badge>\n    </ion-item>\n\n    <ion-item>\n      <ion-icon name="md-plane" item-start></ion-icon>\n        Havana, Cuba\n      <ion-badge item-end style="background-color:green">$1.5k</ion-badge>\n    </ion-item>\n\n  </ion-list>\n    \n  <div class="row">\n    <div class="lcolumn">\n      <div>\n        <div class="imagewrap">\n            <img src="../../assets/imgs/spain.jpg" alt="Barcelona">\n            <ion-fab>\n            <button ion-fab mini class="button1">\n            <ion-icon name="arrow-up"></ion-icon>\n            </button>\n            <ion-fab-list side="top">\n              <button type="button" class="location">\n                Spain\n              </button>\n            </ion-fab-list>\n          </ion-fab>\n        </div>\n\n    <div class="imagewrap">\n            <img src="../../assets/imgs/paris.jpg" alt="France">\n            <ion-fab>\n            <button ion-fab mini class="button1">\n            <ion-icon name="arrow-up"></ion-icon>\n            </button>\n            <ion-fab-list side="top">\n              <button type="button" class="location">\n                France\n              </button>\n            </ion-fab-list>\n          </ion-fab>\n        </div>\n      </div>\n    </div>\n\n  <div class="rcolumn">\n    <div class="imagewrap">\n            <img src="../../assets/imgs/havana.jpg" alt="Cuba">\n            <ion-fab>\n            <button ion-fab mini class="button1">\n            <ion-icon name="arrow-up"></ion-icon>\n            </button>\n            <ion-fab-list side="top">\n              <button (click)="toCuba()" type="button" class="location">\n                Cuba\n              </button>\n            </ion-fab-list>\n          </ion-fab>\n      </div>\n    </div>\n  </div>\n\n\n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -670,13 +684,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_register_register__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_firebase_config__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_cuba_cuba__ = __webpack_require__(507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_firebase_config__ = __webpack_require__(506);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -706,6 +722,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_explore_explore__["a" /* ExplorePage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_cuba_cuba__["a" /* CubaPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__["a" /* TutorialPage */]
             ],
             imports: [
@@ -713,7 +730,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: []
                 }),
-                __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_15__app_firebase_config__["a" /* FIREBASE_CONFIG */]),
+                __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_16__app_firebase_config__["a" /* FIREBASE_CONFIG */]),
                 __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["b" /* AngularFireAuthModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
@@ -725,6 +742,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_explore_explore__["a" /* ExplorePage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_cuba_cuba__["a" /* CubaPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_tutorial_tutorial__["a" /* TutorialPage */]
             ],
             providers: [
@@ -1054,6 +1072,57 @@ var FIREBASE_CONFIG = {
     messagingSenderId: "16280700101"
 };
 //# sourceMappingURL=app.firebase.config.js.map
+
+/***/ }),
+
+/***/ 507:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CubaPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(111);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the TutorialPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CubaPage = (function () {
+    function CubaPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CubaPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TutorialPage');
+    };
+    CubaPage.prototype.toTabs = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs__["a" /* TabsPage */]);
+    };
+    CubaPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-cuba',template:/*ion-inline-start:"/Users/Evonne/Desktop/bucketlistp2/src/pages/cuba/cuba.html"*/`\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Cuba</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content text-center padding>\n  <h2 style="text-align:center">Havana, Cuba</h2>\n\n  <img style="align:center; width:65%" src="../../assets/imgs/havana.jpg">\n    \n\n    <ion-list>\n      \n\n        <ion-item>\n            <ion-icon name="plane" item-start></ion-icon>\n            From: JFK on 12-06-2017\n            \n        </ion-item>\n\n        <ion-item>\n            <ion-icon name="pricetag" item-start></ion-icon>\n            Price (USD):\n            <ion-badge item-end style="background-color:green">173</ion-badge>\n        </ion-item>\n\n        <ion-item>\n            <ion-icon name="happy" item-start></ion-icon>\n            Points:\n            <ion-badge item-end>8900</ion-badge>\n        </ion-item>\n\n        <ion-item>\n            <ion-icon name="bonfire" item-start></ion-icon>\n            Hot Deal: NO\n            \n        </ion-item>\n\n        <ion-item>\n            <ion-icon name="clock" item-start></ion-icon>\n            Deal ends: 03-27-2018\n            \n        </ion-item>\n\n    </ion-list>\n\n\n    <button ion-button round full (click)="toTabs()"><ion-icon name="arrow-back"></ion-icon>&nbsp;Back</button>\n    \n</ion-content>`/*ion-inline-end:"/Users/Evonne/Desktop/bucketlistp2/src/pages/cuba/cuba.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], CubaPage);
+    return CubaPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=cuba.js.map
 
 /***/ })
 
